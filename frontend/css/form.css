@@ -1,0 +1,79 @@
+.form__wrap {
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form {
+	max-width: 420px;
+	width: 100%;
+	padding: 20px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 10px;
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border: 1px solid var(--text-color);
+	backdrop-filter: blur(10px);
+}
+
+.form__title {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	font-size: 25px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.form__row {
+	display: flex;
+	flex-direction: column;
+	row-gap: 2px;
+	font-size: 14px;
+	width: 100%;
+}
+.form__row > input,
+.form__row > textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	outline: none;
+	resize: none;
+	border-radius: 5px;
+	border: 1px solid var(--text-color);
+	padding: 5px;
+}
+
+.form__row > input[type='file'] {
+	display: none;
+}
+.form__row:has(input[type='file']) {
+	cursor: pointer;
+	border-radius: 10px;
+	width: 100%;
+	padding: 5px 15px;
+	border: 1px solid var(--text-color);
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+}
+
+.form__row:has(input[type='file']):hover {
+	background-color: var(--accented-color);
+}
+
+.submit {
+	margin-top: 5px;
+	cursor: pointer;
+	border: 1px solid var(--text-color);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.else {
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}

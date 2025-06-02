@@ -1,0 +1,1 @@
+<footer class="footer">© 2025 DelBlog x vseleyshiy. Все права защищены.</footer>
